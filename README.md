@@ -3,18 +3,20 @@
 ## Prerequisites
 
 ### Ripgrep
-- **Description**: Provides grep-like capabilities.
-- **Required** by: Telescope
-- **Install**: winget install BurntSushi.ripgrep.MSVC
+Provides grep-like capabilities for Telescope
+```
+winget install BurntSushi.ripgrep.MSVC
+```
 
 ### Sharkdp
-- **Description**: Finds entries in the file system.
-- **Required** by: Telescope
-- **Install**: winget install sharkdp.fd
+Advanced file system entry finder for Telescope.
+```
+winget install sharkdp.fd
+```
 
 ### Zig
-- **Description**: c compiler
-- **Required** by: Tree-Sitter
-- **Install**: winget install zig.zig
-- **Note**: Takes 15 minutes to unzip.
-
+c compiler used by Tree-Sitter (Because my copy of MinGW/gcc is old and bound to another application).
+```
+winget install zig.zig
+```
+> **Note**: Takes 15 minutes to unzip.
