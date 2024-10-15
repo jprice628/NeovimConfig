@@ -38,7 +38,7 @@ require 'nvim-treesitter.install'.prefer_git = false
 require 'nvim-treesitter.install'.compilers = { "zig" }
 local config = require("nvim-treesitter.configs")
 config.setup({
-    ensure_installed = { "c_sharp", "css", "html", "javascript", "lua" },
+    ensure_installed = { "c_sharp", "css", "html", "javascript", "lua", "json", "powershell" },
     highlight = { enable = true },
     indent = { enable = true }
 })
