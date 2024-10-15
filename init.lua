@@ -30,6 +30,9 @@ vim.keymap.set('n', '<leader>fg', builtin.live_grep, { desc = 'Telescope live gr
 vim.keymap.set('n', '<leader>fb', builtin.buffers, { desc = 'Telescope buffers' })
 vim.keymap.set('n', '<leader>fh', builtin.help_tags, { desc = 'Telescope help tags' })
 
+-- Neo-Tree
+vim.keymap.set('n', '<C-n>', ':Neotree reveal filesystem left<CR>', { desc = 'Show filesystem tree.' })
+
 -- Tree-sitter
 require 'nvim-treesitter.install'.prefer_git = false
 require 'nvim-treesitter.install'.compilers = { "zig" }
