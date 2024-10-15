@@ -20,3 +20,9 @@ c compiler used by Tree-Sitter (Because my copy of MinGW/gcc is old and bound to
 winget install zig.zig
 ```
 > **Note**: Takes 15 minutes to unzip.
+
+## Nerd Fonts
+Fonts that contain added glyphs needed by Neo-Tree.
+```
+https://www.nerdfonts.com/font-downloads
+```
