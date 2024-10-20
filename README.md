@@ -29,3 +29,21 @@ https://www.nerdfonts.com/font-downloads
 ```
 The Cousine font is good. Download. Unzip the CousineNerdFontMono-Regular.ttf 
 file (You don't need the others), right-click, and select install.
+
+## Treesitter Network Issues
+If you experience network issues with Treesitter when starting NeoVim, try 
+these two things:
+
+1. Open .\lua\plugins\treesitter.lua, and change the `prefer_git` flag to true.
+```
+require 'nvim-treesitter.install'.prefer_git = true
+```
+Note, this has been deprecated, so it may not work forever.
+
+2. Create a file named `.curlrc`, and save it in your %userprofile% directory. 
+Add the following line to the file, save it, and restart NeoVim.
+```
+--ssl-no-revoke
+```
+Caution: This disables curl's certificate revocation detection. There are 
+risks involved.
