@@ -4,6 +4,7 @@ vim.o.number = true
 -- Search
 vim.o.hlsearch = true
 vim.o.ignorecase = true
+vim.o.wrap = false
 
 -- Use four spaces instead of tabs
 vim.o.expandtab = true
@@ -17,28 +18,3 @@ vim.g.maplocalleader = "\\"
 
 -- Lazy plugin manager
 require("config.lazy")
-
--- Catppuccin color scheme
-require("catppuccin").setup()
-vim.cmd.colorscheme "catppuccin"
-
--- Telescope (fuzzy searching)
-local builtin = require("telescope.builtin")
-vim.keymap.set('n', '<C-p>', builtin.find_files, { desc = 'Telescope find files' })
-vim.keymap.set('n', '<leader>ff', builtin.find_files, { desc = 'Telescope find files' })
-vim.keymap.set('n', '<leader>fg', builtin.live_grep, { desc = 'Telescope live grep' })
-vim.keymap.set('n', '<leader>fb', builtin.buffers, { desc = 'Telescope buffers' })
-vim.keymap.set('n', '<leader>fh', builtin.help_tags, { desc = 'Telescope help tags' })
-
--- Neo-Tree
-vim.keymap.set('n', '<C-n>', ':Neotree reveal filesystem left<CR>', { desc = 'Show filesystem tree.' })
-
--- Tree-sitter
-require 'nvim-treesitter.install'.prefer_git = false
-require 'nvim-treesitter.install'.compilers = { "zig" }
-local config = require("nvim-treesitter.configs")
-config.setup({
-    ensure_installed = { "c_sharp", "css", "html", "javascript", "lua", "json", "powershell" },
-    highlight = { enable = true },
-    indent = { enable = true }
-})
