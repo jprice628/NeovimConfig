@@ -40,7 +40,7 @@ require 'nvim-treesitter.install'.prefer_git = true
 ```
 Note, this has been deprecated, so it may not work forever.
 
-2. Create a file named `.curlrc`, and save it in your %userprofile% directory. 
+2. Create a file named `.curlrc`, and save it in your `%userprofile%` directory. 
 Add the following line to the file, save it, and restart Neovim.
 ```
 --ssl-no-revoke
