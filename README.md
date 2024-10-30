@@ -47,3 +47,16 @@ Add the following line to the file, save it, and restart Neovim.
 ```
 Caution: This disables curl's certificate revocation detection. There are 
 risks involved.
+
+## Lua
+When debugging, it can be helpful to create a command that prints something.
+Adding the code below to the init.lua file will add a 'ShowDataPath' command
+that prints Neovim's data path when invoked.
+```
+vim.api.nvim_create_user_command(
+    "ShowDataPath",
+    function()
+        print(vim.fn.stdpath("data"))
+    end,
+    {})
+```
