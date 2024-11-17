@@ -20,7 +20,9 @@ return {
         config = function()
             local lspconfig = require('lspconfig')
 
-            lspconfig.lua_ls.setup({})
+            lspconfig.lua_ls.setup({
+                cmd = { vim.fn.stdpath("data") .. '\\mason\\packages\\lua-language-server\\bin\\lua-language-server.exe' }
+            })
 
             lspconfig.omnisharp.setup({
                 cmd = { 'dotnet', vim.fn.stdpath("data") .. '\\mason\\packages\\omnisharp\\libexec\\omnisharp.dll' },
