@@ -2,6 +2,14 @@
 
 ## Prerequisites
 
+### Windows Terminal
+Earlier versions of windows do not have the windows terminal installed by
+default. It can be installed from the Microsoft Store. See their github page
+for more information.
+```
+https://github.com/microsoft/terminal
+```
+
 ### Ripgrep
 Provides grep-like capabilities for Telescope
 ```
@@ -28,7 +36,8 @@ Fonts that contain added glyphs needed by Neo-Tree.
 https://www.nerdfonts.com/font-downloads
 ```
 The Cousine font is good. Download. Unzip the CousineNerdFontMono-Regular.ttf 
-file (You don't need the others), right-click, and select install.
+file (You don't need the others), right-click, and select install. Once the
+font is installed, select it in the Windows Terminal settings.
 
 ## Treesitter Network Issues
 If you experience network issues with Treesitter when starting Neovim, try 
