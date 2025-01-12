@@ -49,19 +49,19 @@ return {
                 vim.lsp.buf.hover,
                 { desc = 'Displays information about the symbol under the cursor.' })
 
-            vim.keymap.set('n', 'gd',
+            vim.keymap.set('n', '<leader>gd',
                 vim.lsp.buf.definition,
                 { desc = 'Jumps to the definition of the symbol under the cursor.' })
 
-            vim.keymap.set('n', 'gi',
+            vim.keymap.set('n', '<leader>gi',
                 vim.lsp.buf.implementation,
                 { desc = 'Lists the implementations for the symbol under the cursor.' })
 
-            vim.keymap.set({ 'n', 'i' }, '<C-k>',
+            vim.keymap.set({ 'n', 'i' }, '<leader>sh',
                 vim.lsp.buf.signature_help,
                 { desc = 'Displays signature information about the symbol under the cursor.' })
 
-            vim.keymap.set('n', 'gr',
+            vim.keymap.set('n', '<leader>gr',
                 vim.lsp.buf.references,
                 { desc = 'Lists the references to the symbol under the cursor.' })
 
