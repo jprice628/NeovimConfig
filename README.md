@@ -64,3 +64,6 @@ vim.api.nvim_create_user_command(
     end,
     {})
 ```
+
+## Quick Fix / CDO
+https://www.youtube.com/watch?v=kK1L1o13xGE
