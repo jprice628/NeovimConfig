@@ -2,14 +2,6 @@
 
 ## Prerequisites
 
-### Windows Terminal
-Earlier versions of windows do not have the windows terminal installed by
-default. It can be installed from the Microsoft Store. See their github page
-for more information.
-```
-https://github.com/microsoft/terminal
-```
-
 ### Ripgrep
 Provides grep-like capabilities for Telescope
 ```
@@ -31,7 +23,9 @@ winget install zig.zig
 > **Note**: Takes ~15 minutes to unzip.
 
 ## Nerd Fonts
-Fonts that contain added glyphs needed by Neo-Tree.
+Fonts that contain added glyphs needed by Neo-Tree. You may already have
+completed this step if you went through the Prelude setup
+(https://github.com/jprice628/Prelude/blob/main/README.md).
 ```
 https://www.nerdfonts.com/font-downloads
 ```
@@ -58,7 +52,7 @@ prompt). Add the following line to the file, save it, and restart Neovim.
 Caution: This disables curl's certificate revocation detection. There are 
 risks involved.
 
-## Lua
+## LUA Debugging
 When debugging, it can be helpful to create a command that prints something.
 Adding the code below to the init.lua file will add a 'ShowDataPath' command
 that prints Neovim's data path when invoked.
